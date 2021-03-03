@@ -22,7 +22,7 @@ function startPainting(){
 function onMouseMove(event){
     const x = event.offsetX; //client는 윈도우 화면 내에서의 위치
     const y = event.offsetY; //offset은 canvas 내에서의 위치
-    console.log(x,y)
+    
     if(!painting){
         ctx.beginPath(); //path는 line 이라고 생각 (시작점)
         ctx.moveTo(x, y)
